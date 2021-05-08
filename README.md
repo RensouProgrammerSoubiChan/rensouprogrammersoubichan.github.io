@@ -6,6 +6,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 [https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io](https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io)
 
+### Posts
+[2021-05-08 Sample Blog Post](https://rensouprogrammersoubichan.github.io/2021-05-08-sample)
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
