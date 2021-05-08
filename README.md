@@ -4,14 +4,15 @@ You can use the [editor on GitHub](https://github.com/RensouProgrammerSoubiChan/
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-[https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io](https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io)
-
 ### Posts
 - [2021-05-09 Github Pages超傻瓜式搭建Markdown靜態Blog](https://rensouprogrammersoubichan.github.io/2021-05-09-simple-github-pages-blog.html)
 
 ### Sample Posts
 - [2021-05-08 Sample Blog Post](https://rensouprogrammersoubichan.github.io/2021-05-08-sample)
 - [2021-05-09 Sample Blog Post by git push](https://rensouprogrammersoubichan.github.io/2021-05-09-sample-apples)
+
+### [Github Pages Repository](https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io)
+- [https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io](https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io)
 
 ### Markdown
 
