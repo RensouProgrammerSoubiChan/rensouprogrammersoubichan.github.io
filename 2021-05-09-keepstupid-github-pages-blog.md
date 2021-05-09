@@ -1,3 +1,6 @@
+---
+author: RPSchan
+---
 ## Github Pages超傻瓜式搭建Markdown靜態Blog
 
 ### 我認爲的傻瓜式
