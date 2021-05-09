@@ -5,6 +5,7 @@ You can use the [editor on GitHub](https://github.com/RensouProgrammerSoubiChan/
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Posts
+- [2021-05-10-Linux Mint關閉鼠標加速度，調整鼠標靈敏度](https://rensouprogrammersoubichan.github.io/2021-05-10-disable-linux-mint-mouse-acceleration-modify-mouse-sensitivity)
 - [2021-05-09 Github Pages超傻瓜式搭建Markdown靜態Blog](https://rensouprogrammersoubichan.github.io/2021-05-09-keepstupid-github-pages-blog.html)
 
 ### Sample Posts
