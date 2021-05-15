@@ -48,6 +48,10 @@ author: RPSchan
             Option "TransformationMatrix" "0.625 0 0 0 0.625 0 0 0 1"
     EndSection
     ```
+#### 關於桌面的UI縮放比例（User Interface Scale）
+該比例會影響桌面中的鼠標指針速度，調高後可能會讓鼠標指針速度變慢
+
+如果用Linux玩遊戲的話，可能速度還會有所不同。有些Windows遊戲可以忽略桌面鼠標速度，而且Windows的桌面縮放比例似乎並不影響鼠標速度。
 
 ### 考察
 比較新版本的```/usr/share/X11/xorg.conf.d/```目錄下的```40-libinput.conf```文件有寫說明
