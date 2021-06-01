@@ -13,6 +13,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 - [2021-05-08 Sample Blog Post](https://rensouprogrammersoubichan.github.io/2021-05-08-sample)
 - [2021-05-09 Sample Blog Post by git push](https://rensouprogrammersoubichan.github.io/2021-05-09-sample-apples)
 
+### Tip of the day
+[2021-Tip of the day](https://rensouprogrammersoubichan.github.io/2021-tip-of-the-day)
+
 ### [Github Pages Repository](https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io)
 - [https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io](https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io)
 
