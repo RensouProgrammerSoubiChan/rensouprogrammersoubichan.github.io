@@ -5,16 +5,16 @@ You can use the [editor on GitHub](https://github.com/RensouProgrammerSoubiChan/
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ### Posts
-- [2021-05-10 多平臺Git GUI推薦：VScode + Git GUI插件](https://rensouprogrammersoubichan.github.io/2021-05-10-multi-platform-git-gui)
-- [2021-05-10 Linux Mint關閉鼠標加速度，調整鼠標靈敏度](https://rensouprogrammersoubichan.github.io/2021-05-10-disable-linux-mint-mouse-acceleration-modify-mouse-sensitivity)
-- [2021-05-09 Github Pages超傻瓜式搭建Markdown靜態Blog](https://rensouprogrammersoubichan.github.io/2021-05-09-keepstupid-github-pages-blog.html)
+- [2021-05-10 多平臺Git GUI推薦：VScode + Git GUI插件](2021-05-10-multi-platform-git-gui)
+- [2021-05-10 Linux Mint關閉鼠標加速度，調整鼠標靈敏度](2021-05-10-disable-linux-mint-mouse-acceleration-modify-mouse-sensitivity)
+- [2021-05-09 Github Pages超傻瓜式搭建Markdown靜態Blog](2021-05-09-keepstupid-github-pages-blog)
 
 ### Tip of the day
-[2021-Tip of the day](https://rensouprogrammersoubichan.github.io/2021-tip-of-the-day)
+[2021-Tip of the day](2021-tip-of-the-day)
 
 ### Sample Posts
-- [2021-05-08 Sample Blog Post](https://rensouprogrammersoubichan.github.io/2021-05-08-sample)
-- [2021-05-09 Sample Blog Post by git push](https://rensouprogrammersoubichan.github.io/2021-05-09-sample-apples)
+- [2021-05-08 Sample Blog Post](2021-05-08-sample)
+- [2021-05-09 Sample Blog Post by git push](2021-05-09-sample-apples)
 
 ### [Github Pages Repository](https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io)
 - [https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io](https://github.com/RensouProgrammerSoubiChan/rensouprogrammersoubichan.github.io)
