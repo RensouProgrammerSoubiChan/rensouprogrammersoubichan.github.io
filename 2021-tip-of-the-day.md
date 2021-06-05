@@ -32,6 +32,7 @@ author: RPSchan
 
 - 004.自建Anki同步服務器，總結網上別人的方法
     網上常見的Anki 2.1+自建同步服務器，簡單總結來說過程是：
+    服務器配置
     ``` bash
     # 找個存放Anki服務器文件的目錄
     git clone https://github.com/tsudoko/anki-sync-server.git
@@ -39,15 +40,37 @@ author: RPSchan
     git submodule update --init
     cd anki-bundled/
     pip3 install -r requirements.txt
-    # 確保安裝了依賴包，如果不放心還可以手工裝webob確認下，pip3 install webob
-    # 這一步可能會有不少報錯，有些報錯並不影響安裝，我對Python不熟
+    # 確保安裝了依賴包，如果不放心還可以手工裝webob確認下
+    # pip3 install webob
+    # 根據系統的包版本，可能會有不少報錯，但不一定造成影響（抱歉對Python不熟）
     cd ..
     python3 ./ankisyncctl.py adduser <username> # 添加用戶名和密碼
     vi ankisyncd.conf
-    # 設置服務器本機地址，默認爲0.0.0.0接受包括公網的所有連接，因爲有操作系統其他設置擋着，不改應該也沒問題
-    # 有需要的話還可以設置文件存放位置，甚至繼承之前的Anki服務器存檔
+    # 設置服務器本機地址，默認爲0.0.0.0接受包括公網的所有連接
+    # 因爲有操作系統和其他設置擋着，不改應該也沒問題，測試可以先用127.0.0.1
+    # 有需要的話還可以改文件存放位置，甚至繼承之前的Anki服務器存檔
     python3 -m ankisyncd
     ```
+
+    Anki客戶端配置
+    ```bash
+    # 找到Anki客戶端的數據文件目錄
+    # 不同系統的默認位置參考Anki手冊，我是用啓動參數-b自己指定的位置
+    # Anki目錄下Anki2/addons21下是插件目錄
+    # 新建一個插件目錄，比如叫ankisyncd，在下面創建__init__.py指定同步服務器
+    # 例：Anki2/addons21/ankisyncd/__init__.py
+    import anki.sync, anki.hooks, aqt
+    addr = 'http://127.0.0.1:27701/'
+    anki.sync.SYNC_BASE = "%s" + addr
+
+    def resetHostNum():
+    aqt.mw.pm.profile['hostNum'] = None
+
+    anki.hooks.addHook("profileLoaded", resetHostNum)
+    # 這是Anki 2.1到2.1.20的配置，2.1.28後配置內容又改了
+    # 不過同步協議版本都從9變10，反正和服務器也不兼容，也無所謂了
+    ```
+
     容易碰到的坑有
     - 不是最新的系統（18年的ubuntu都不算所謂「最新」），可能默認的python是2.7，而anki-sync-server已經全面用python3，所以命令全部要換成python3、pip3。不是什麼大問題，但是很多教程直接略過用python也不說自己是3.x版，真是不友好
     存在的問題有
