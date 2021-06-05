@@ -30,6 +30,31 @@ author: RPSchan
     - 這種時候意外地可以用Anki管理，有這類Future類的代辦，就塞進一個Deck裏
     - 有空閒的時候開Deck看，不滿意就按照討厭程度選擇自己已經「熟悉」了，那麼就會更久後再出現
 
+- 004.自建Anki同步服務器，總結網上別人的方法
+    網上常見的Anki 2.1+自建同步服務器，簡單總結來說過程是：
+    ``` bash
+    # 找個存放Anki服務器文件的目錄
+    git clone https://github.com/tsudoko/anki-sync-server.git
+    cd anki-sync-server
+    git submodule update --init
+    cd anki-bundled/
+    pip3 install -r requirements.txt
+    # 確保安裝了依賴包，如果不放心還可以手工裝webob確認下，pip3 install webob
+    # 這一步可能會有不少報錯，有些報錯並不影響安裝，我對Python不熟
+    cd ..
+    python3 ./ankisyncctl.py adduser <username> # 添加用戶名和密碼
+    vi ankisyncd.conf
+    # 設置服務器本機地址，默認爲0.0.0.0接受包括公網的所有連接，因爲有操作系統其他設置擋着，不改應該也沒問題
+    # 有需要的話還可以設置文件存放位置，甚至繼承之前的Anki服務器存檔
+    python3 -m ankisyncd
+    ```
+    容易碰到的坑有
+    - 不是最新的系統（18年的ubuntu都不算所謂「最新」），可能默認的python是2.7，而anki-sync-server已經全面用python3，所以命令全部要換成python3、pip3。不是什麼大問題，但是很多教程直接略過用python也不說自己是3.x版，真是不友好
+    存在的問題有
+    - 安裝的anki-sync-server是老版本，支持的同步協議版本是9，而Anki 2.1.22以及以後的版本已經是同步協議版本10了，直接使用可能會無法上傳（等於不能用），所以客戶端需要安裝老版本的Anki（2.1.20及以下的2.1）
+    - 該repo制定版本的Anki包（`anki-bundled/`）是2015年的某個開發版本，也太老了，好像還不是穩定版
+    不過總體而言，用Anki 2.1.20以及以前的2.1版是可以正常同步的，用起來也不是不行
+
 
 
 
